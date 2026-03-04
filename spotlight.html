@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+body {
+  margin: 0;
+  background: transparent;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+#spotlight-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid rgba(255,255,255,0.2);
+  padding: 16px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  text-align: center;
+}
+#spotlight-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+#spotlight-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+#spotlight-discount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffd700;
+  margin-top: 8px;
+}
+#spotlight-code {
+  font-size: 14px;
+  margin-top: 4px;
+}
+#spotlight-features {
+  text-align: left;
+  margin-top: 8px;
+  list-style: none;
+  padding: 0;
+}
+#spotlight-features li {
+  margin-bottom: 4px;
+}
+</style>
+</head>
+<body>
+<div id="spotlight-container">
+  <img id="spotlight-logo" src="" alt="" />
+  <div id="spotlight-title">Loading...</div>
+  <div id="spotlight-discount"></div>
+  <div id="spotlight-code"></div>
+  <ul id="spotlight-features"></ul>
+</div>
+<script>
+async function fetchDeals() {
+  const res = await fetch('./deals.json', { cache: 'no-store' });
+  return await res.json();
+}
+function startSpotlight(data) {
+  const items = data.spotlight;
+  let index = 0;
+  const logoEl = document.getElementById('spotlight-logo');
+  const titleEl = document.getElementById('spotlight-title');
+  const discountEl = document.getElementById('spotlight-discount');
+  const codeEl = document.getElementById('spotlight-code');
+  const featuresEl = document.getElementById('spotlight-features');
+  function update() {
+    const item = items[index];
+    logoEl.src = item.logo;
+    logoEl.alt = item.firm;
+    titleEl.textContent = item.firm;
+    discountEl.textContent = item.discount;
+    codeEl.textContent = 'Use Code: ' + item.code;
+    featuresEl.innerHTML = '';
+    item.features.forEach(feat => {
+      const li = document.createElement('li');
+      li.textContent = '\u2022 ' + feat;
+      featuresEl.appendChild(li);
+    });
+    index = (index + 1) % items.length;
+  }
+  update();
+  setInterval(update, 60000);
+}
+fetchDeals().then(startSpotlight).catch(err => {
+  document.getElementById('spotlight-title').textContent = 'Failed to load deals';
+});
+</script>
+</body>
+</html>

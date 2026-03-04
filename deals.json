@@ -1,65 +1,94 @@
-[
-  {
-    "firm": "Apex",
-    "deal": "Source unreachable",
-    "code": null,
-    "expires": null,
-    "active": false,
-    "source": "https://apextraderfunding.com/coupon-code/",
-    "updatedAt": "2026-03-04T21:57:06.421Z"
-  },
-  {
-    "firm": "Tradeify",
-    "deal": "30% OFF",
-    "code": "MAR",
-    "expires": "15 MARCH",
-    "active": true,
-    "source": "https://tradeify.co/",
-    "updatedAt": "2026-03-04T21:57:06.532Z"
-  },
-  {
-    "firm": "Take Profit Trader",
-    "deal": "40% OFF",
-    "code": "NOFEE40",
-    "expires": null,
-    "active": true,
-    "source": "https://takeprofittrader.com/",
-    "updatedAt": "2026-03-04T21:57:06.813Z"
-  },
-  {
-    "firm": "My Funded Futures",
-    "deal": "50% OFF",
-    "code": "SENT",
-    "expires": null,
-    "active": true,
-    "source": "https://myfundedfutures.com/coupons",
-    "updatedAt": "2026-03-04T21:57:07.173Z"
-  },
-  {
-    "firm": "Lucid Trading",
-    "deal": "Source unreachable",
-    "code": null,
-    "expires": null,
-    "active": false,
-    "source": "https://lucidtrading.com/",
-    "updatedAt": "2026-03-04T21:57:07.295Z"
-  },
-  {
-    "firm": "Bulenox",
-    "deal": "Promo code available",
-    "code": "S-CUSTOM-CSS",
-    "expires": null,
-    "active": true,
-    "source": "https://bulenox.com/",
-    "updatedAt": "2026-03-04T21:57:07.429Z"
-  },
-  {
-    "firm": "FundedNext Futures",
-    "deal": "Source unreachable",
-    "code": null,
-    "expires": null,
-    "active": false,
-    "source": "https://propfirmmatch.com/futures/offers/fnfutures-match",
-    "updatedAt": "2026-03-04T21:57:07.569Z"
-  }
-]
+{
+  "ticker": [
+    {
+      "firm": "Lucid Trading",
+      "logo": "logos/lucid.png",
+      "text": "50% OFF – All Plans – One-Time Fee – Fast Payouts",
+      "code": "DTJ"
+    },
+    {
+      "firm": "Apex Trader Funding",
+      "logo": "logos/apex.png",
+      "text": "85% OFF – $17 Eval – Up to 20 Accounts – Paid Every 5 Days",
+      "code": "DTJ"
+    },
+    {
+      "firm": "Tradeify",
+      "logo": "logos/tradeify.png",
+      "text": "30% OFF – All Plans – Daily Payouts – No Activation Fee",
+      "code": "DTJ"
+    },
+    {
+      "firm": "Funded Next",
+      "logo": "logos/fundednext.png",
+      "text": "10% OFF – One-Time Fee – No Activation Fee",
+      "code": "DTJ"
+    },
+    {
+      "firm": "Take Profit Trader",
+      "logo": "logos/tpt.png",
+      "text": "40% OFF – Daily Payouts – No Activation Fee – No Consistency",
+      "code": "DTJ"
+    }
+  ],
+  "spotlight": [
+    {
+      "firm": "Lucid Trading",
+      "logo": "logos/lucid.png",
+      "discount": "50% OFF",
+      "code": "DTJ",
+      "features": [
+        "All Plans",
+        "One-Time Fee",
+        "No Activation Fee",
+        "No Buffer",
+        "No DD or DLL"
+      ]
+    },
+    {
+      "firm": "Apex Trader Funding",
+      "logo": "logos/apex.png",
+      "discount": "85% OFF",
+      "code": "DTJ",
+      "features": [
+        "All New Plans",
+        "Up to 20 Accounts",
+        "End-of-Day Drawdown",
+        "Trailing Drawdown",
+        "Get Paid Every 5 Days"
+      ]
+    },
+    {
+      "firm": "Tradeify",
+      "logo": "logos/tradeify.png",
+      "discount": "30% OFF",
+      "code": "DTJ",
+      "features": [
+        "All Plans",
+        "Daily Payouts",
+        "No Activation Fee"
+      ]
+    },
+    {
+      "firm": "Funded Next",
+      "logo": "logos/fundednext.png",
+      "discount": "10% OFF",
+      "code": "DTJ",
+      "features": [
+        "One-Time Fee",
+        "No Activation Fee"
+      ]
+    },
+    {
+      "firm": "Take Profit Trader",
+      "logo": "logos/tpt.png",
+      "discount": "40% OFF",
+      "code": "DTJ",
+      "features": [
+        "Daily Payouts",
+        "No Activation Fee",
+        "No Consistency Rules"
+      ]
+    }
+  ]
+}

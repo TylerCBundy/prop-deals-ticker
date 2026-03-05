@@ -36,6 +36,11 @@ body {
   font-size: 34px;
   font-weight: 700;
   margin-right: 6px;
+}
+.deal-percent {
+  font-size: 36px;
+  font-weight: 800;
+  color: #3cff00;
 }  
 </style>
 </head>
@@ -49,7 +54,9 @@ async function fetchDeals() {
   const res = await fetch('./manual.json', { cache: 'no-store' });
   return await res.json();
 }
-
+function formatDeal(text) {
+  return text.replace(/(\d+%)/, '<span class="deal-percent">$1</span>');
+}
 function startTicker(data) {
   const items = data.ticker;
   let index = 0;
@@ -63,7 +70,7 @@ function startTicker(data) {
   function setContent(item) {
     logoEl.src = item.logo;
     logoEl.alt = item.firm;
-    textEl.innerHTML = '<span class="firm-name">' + item.firm + '</span> ' + item.text;
+    textEl.innerHTML = '<span class="firm-name">' + item.firm + '</span> ' + formatDeal(item.text);
   }
 
   // Initialize with first item visible

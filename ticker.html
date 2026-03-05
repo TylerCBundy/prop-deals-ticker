@@ -44,33 +44,47 @@ async function fetchDeals() {
   const res = await fetch('./manual.json', { cache: 'no-store' });
   return await res.json();
 }
+
 function startTicker(data) {
   const items = data.ticker;
   let index = 0;
+
   const logoEl = document.getElementById('ticker-logo');
   const textEl = document.getElementById('ticker-text');
-  function update() {
-    const item = items[index];
+
+  const FADE_MS = 500;     // fade out 0.5s
+  const HOLD_MS = 9000;    // visible time so total cycle stays ~10s
+
+  function setContent(item) {
     logoEl.src = item.logo;
     logoEl.alt = item.firm;
-    logoEl.style.opacity = 0;
-textEl.style.opacity = 0;
+    textEl.textContent = item.firm + ' – ' + item.text;
+  }
 
-setTimeout(() => {
-
-  logoEl.src = item.logo;
-  logoEl.alt = item.firm;
-  textEl.textContent = item.firm + ' – ' + item.text;
-
+  // Initialize with first item visible
+  setContent(items[index]);
   logoEl.style.opacity = 1;
   textEl.style.opacity = 1;
 
-}, 500);
-    index = (index + 1) % items.length;
+  function update() {
+    // fade OUT current
+    logoEl.style.opacity = 0;
+    textEl.style.opacity = 0;
+
+    // after fade out completes, swap content and fade IN
+    setTimeout(() => {
+      index = (index + 1) % items.length;
+      setContent(items[index]);
+
+      logoEl.style.opacity = 1;
+      textEl.style.opacity = 1;
+    }, FADE_MS);
   }
-  update();
-  setInterval(update, 10000);
+
+  // Run update every 10s: 0.5s fade out + 9s hold + 0.5s fade in feels smooth
+  setInterval(update, FADE_MS + HOLD_MS);
 }
+
 fetchDeals().then(startTicker).catch(err => {
   document.getElementById('ticker-text').textContent = 'Failed to load deals';
 });

@@ -32,6 +32,11 @@ body {
   font-weight: 600;
   transition: opacity 0.5s ease-in-out;
 }
+.firm-name {
+  font-size: 34px;
+  font-weight: 700;
+  margin-right: 6px;
+}  
 </style>
 </head>
 <body>
@@ -58,7 +63,7 @@ function startTicker(data) {
   function setContent(item) {
     logoEl.src = item.logo;
     logoEl.alt = item.firm;
-    textEl.textContent = item.firm + ' – ' + item.text;
+    textEl.innerHTML = '<span class="firm-name">' + item.firm + '</span> – ' + item.text;
   }
 
   // Initialize with first item visible

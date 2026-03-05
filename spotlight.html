@@ -62,7 +62,7 @@ body {
 </div>
 <script>
 async function fetchDeals() {
-  const res = await fetch('./deals.json', { cache: 'no-store' });
+  const res = await fetch('./manual.json', { cache: 'no-store' });
   return await res.json();
 }
 function startSpotlight(data) {

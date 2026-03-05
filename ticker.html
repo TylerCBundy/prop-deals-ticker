@@ -53,11 +53,19 @@ function startTicker(data) {
     const item = items[index];
     logoEl.src = item.logo;
     logoEl.alt = item.firm;
-    textEl.style.opacity = 0;
-    setTimeout(() => {
-      textEl.textContent = item.firm + ' – ' + item.text;
-      textEl.style.opacity = 1;
-    }, 250);
+    logoEl.style.opacity = 0;
+textEl.style.opacity = 0;
+
+setTimeout(() => {
+
+  logoEl.src = item.logo;
+  logoEl.alt = item.firm;
+  textEl.textContent = item.firm + ' – ' + item.text;
+
+  logoEl.style.opacity = 1;
+  textEl.style.opacity = 1;
+
+}, 500);
     index = (index + 1) % items.length;
   }
   update();

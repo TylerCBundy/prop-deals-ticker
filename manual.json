@@ -3,7 +3,7 @@
     {
       "firm": "Lucid Trading",
       "logo": "logos/lucid.png",
-      "text": "50% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Plans • One-Time Fee • Fast Payouts",
+      "text": "40% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Plans • One-Time Fee • Fast Payouts",
       "code": "DTJ"
     },
     {
@@ -42,7 +42,7 @@
     {
       "firm": "Lucid Trading",
       "logo": "logos/lucid.png",
-      "discount": "50% OFF",
+      "discount": "40% OFF",
       "code": "DTJ",
       "features": [
         "All Plans",

@@ -21,7 +21,7 @@
     {
       "firm": "FundedNext",
       "logo": "logos/fundednext.png",
-      "text": "10% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; One-Time Fee • No Activation Fee",
+      "text": "30% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; One-Time Fee • No Activation Fee",
       "code": "DTJ"
     },
     {
@@ -33,7 +33,7 @@
     {
   "firm": "Bulenox",
   "logo": "logos/bulenox.png",
-  "text": "45% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; No Min Trading Days • Data Feed Included • One-Time Activation Fee",
+  "text": "89% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; No Min Trading Days • Data Feed Included • One-Time Activation Fee",
   "code": "DTJ"
 }
   ],
@@ -48,7 +48,7 @@
         "All Plans",
         "One-Time Fee",
         "No Activation Fee",
-        "No Buffer",
+        "No Monthly Fees",
         "No DD or DLL"
       ]
     },
@@ -71,7 +71,7 @@
       "discount": "40% OFF",
       "code": "DTJ",
       "features": [
-        "No Subscriptions",
+        "No Monthly Fees",
         "Daily Payouts",
         "No Activation Fee"
       ]
@@ -79,7 +79,7 @@
     {
       "firm": "FundedNext",
       "logo": "logos/fundednext.png",
-      "discount": "10% OFF",
+      "discount": "30% OFF",
       "code": "DTJ",
       "features": [
         "One-Time Fee",

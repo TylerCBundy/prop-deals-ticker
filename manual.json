@@ -15,7 +15,7 @@
     {
       "firm": "Tradeify",
       "logo": "logos/tradeify.png",
-      "text": "30% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Plans • Daily Payouts • No Activation Fee",
+      "text": "40% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Plans • Daily Payouts • No Activation Fee",
       "code": "DTJ"
     },
     {
@@ -68,10 +68,10 @@
     {
       "firm": "Tradeify",
       "logo": "logos/tradeify.png",
-      "discount": "30% OFF",
+      "discount": "40% OFF",
       "code": "DTJ",
       "features": [
-        "All Plans",
+        "No Subscriptions",
         "Daily Payouts",
         "No Activation Fee"
       ]

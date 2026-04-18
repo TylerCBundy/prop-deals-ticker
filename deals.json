@@ -1,12 +1,12 @@
 [
   {
     "firm": "Apex",
-    "deal": "Source unreachable",
-    "code": null,
+    "deal": "90% OFF",
+    "code": "COUPON",
     "expires": null,
-    "active": false,
+    "active": true,
     "source": "https://apextraderfunding.com/coupon-code/",
-    "updatedAt": "2026-04-18T12:55:33.890Z"
+    "updatedAt": "2026-04-18T13:58:49.319Z"
   },
   {
     "firm": "Tradeify",
@@ -15,7 +15,7 @@
     "expires": "30 APRIL",
     "active": true,
     "source": "https://tradeify.co/",
-    "updatedAt": "2026-04-18T12:55:34.003Z"
+    "updatedAt": "2026-04-18T13:58:49.443Z"
   },
   {
     "firm": "Take Profit Trader",
@@ -24,7 +24,7 @@
     "expires": null,
     "active": true,
     "source": "https://takeprofittrader.com/",
-    "updatedAt": "2026-04-18T12:55:34.333Z"
+    "updatedAt": "2026-04-18T13:58:49.888Z"
   },
   {
     "firm": "My Funded Futures",
@@ -33,7 +33,7 @@
     "expires": null,
     "active": true,
     "source": "https://myfundedfutures.com/coupons",
-    "updatedAt": "2026-04-18T12:55:34.609Z"
+    "updatedAt": "2026-04-18T13:58:50.414Z"
   },
   {
     "firm": "Lucid Trading",
@@ -42,7 +42,7 @@
     "expires": null,
     "active": true,
     "source": "https://lucidtrading.com/",
-    "updatedAt": "2026-04-18T12:55:34.688Z"
+    "updatedAt": "2026-04-18T13:58:50.544Z"
   },
   {
     "firm": "Bulenox",
@@ -51,7 +51,7 @@
     "expires": null,
     "active": true,
     "source": "https://bulenox.com/",
-    "updatedAt": "2026-04-18T12:55:34.882Z"
+    "updatedAt": "2026-04-18T13:58:50.846Z"
   },
   {
     "firm": "FundedNext Futures",
@@ -60,6 +60,6 @@
     "expires": null,
     "active": false,
     "source": "https://propfirmmatch.com/futures/offers/fnfutures-match",
-    "updatedAt": "2026-04-18T12:55:35.148Z"
+    "updatedAt": "2026-04-18T13:58:50.958Z"
   }
 ]

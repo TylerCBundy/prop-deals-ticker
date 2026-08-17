@@ -27,7 +27,7 @@
     {
       "firm": "Take Profit Trader",
       "logo": "logos/tpt.png",
-      "text": "40% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Daily Payouts • No Activation Fee • No Consistency",
+      "text": "50% OFF &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Daily Payouts • No Activation Fee • 3-Day Evals",
       "code": "DTJ"
     },
     {
@@ -89,10 +89,11 @@
     {
       "firm": "Take Profit Trader",
       "logo": "logos/tpt.png",
-      "discount": "40% OFF",
+      "discount": "50% OFF",
       "code": "DTJ",
       "features": [
-        "All Plans",
+        "50% Off For Life",
+        "3-Day Evals",
         "Daily Payouts",
         "No Activation Fee",
         "No Consistency"
